@@ -1,11 +1,11 @@
-:global(body), :global(html) {
+body, html {
     height: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-:global(body) {
+body {
     min-height: 100vh;
     min-width: 100vw;
     display: flex;
