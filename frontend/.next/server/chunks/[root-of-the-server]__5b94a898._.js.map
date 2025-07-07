@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 140, "column": 0}, "map": {"version":3,"sources":["file:///Users/shashvatgarg/Desktop/Shashvat_Garg/Projects_Startup/Book%20My%20Adda/frontend/src/app/api/auth/%5B...nextauth%5D/route.ts"],"sourcesContent":["import NextAuth from \"next-auth\";\r\nimport GoogleProvider from \"next-auth/providers/google\";\r\n\r\nexport const authOptions = {\r\n  providers: [\r\n    GoogleProvider({\r\n      clientId: process.env.GOOGLE_ID!,\r\n      clientSecret: process.env.GOOGLE_SECRET!\r\n    }),\r\n  ],\r\n  secret: process.env.NEXTAUTH_SECRET,\r\n};\r\n\r\nconst handler = NextAuth(authOptions);\r\nexport { handler as GET, handler as POST };\r\n"],"names":[],"mappings":";;;;;AAAA;AACA;;;AAEO,MAAM,cAAc;IACzB,WAAW;QACT,CAAA,GAAA,qJAAA,CAAA,UAAc,AAAD,EAAE;YACb,UAAU,QAAQ,GAAG,CAAC,SAAS;YAC/B,cAAc,QAAQ,GAAG,CAAC,aAAa;QACzC;KACD;IACD,QAAQ,QAAQ,GAAG,CAAC,eAAe;AACrC;AAEA,MAAM,UAAU,CAAA,GAAA,uIAAA,CAAA,UAAQ,AAAD,EAAE","debugId":null}}]
+}

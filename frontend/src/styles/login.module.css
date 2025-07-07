@@ -1,0 +1,221 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(71,29,206,0.65), rgba(0,198,255,0.55)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  width: 350px;
+  padding: 40px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.login-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: black;
+  letter-spacing: 1px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #471dce;
+  box-shadow: 0 0 8px rgba(71,29,206,0.3);
+  outline: none;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.forgot-password a {
+  color: #471dce;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px 0;
+  background: linear-gradient(90deg, #471dce 0%, #00c6ff 100%);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(71,29,206,0.2);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, #00c6ff 0%, #471dce 100%);
+  box-shadow: 0 6px 15px rgba(71,29,206,0.3);
+}
+
+/* Social Login Buttons */
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; 
+  padding: 12px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-btn i {
+  font-size: 1.3em;
+}
+
+.social-btn.google {
+  background: #fff;
+  color: #ea4335;
+  border: 1.5px solid #ea4335;
+}
+
+.social-btn.google:hover {
+  background: #ea4335;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.social-btn.facebook {
+  background: #fff;
+  color: #1877f3;
+  border: 1.5px solid #1877f3;
+}
+
+.social-btn.facebook:hover {
+  background: #1877f3;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.social-btn.twitter {
+  background: #fff;
+  color: #1da1f2;
+  border: 1.5px solid #1da1f2;
+}
+
+.social-btn.twitter:hover {
+  background: #1da1f2;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  color: #aaa;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+  margin: 0 10px;
+}
+
+/* Signup Link */
+.signup-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #444;
+  text-align: center;
+}
+
+.signup-link a {
+  color: #471dce;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.signup-link a:hover {
+  color: #00c6ff;
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0; transform: translateY(-20px);
+  }
+  to {
+    opacity: 1; transform: translateY(0);
+  }
+}
+
+.signup-link-anchor {
+  color: #471dce;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signup-link-anchor:hover {
+  text-decoration: underline;
+}

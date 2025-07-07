@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Node
+node_modules/
+
+# Flutter/Dart
+.dart_tool/
+build/
+.packages
+
+# Python
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+
+# Misc
+.env
