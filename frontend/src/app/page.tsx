@@ -73,20 +73,20 @@ export default function HomePage() {
 
       <section className={styles.aboutUs} id="about-us">
         <h2><i className="fas fa-info-circle"></i> About Us</h2>
-        <p><strong>Welcome to Book My Adda – "Your Travel, Your Adda"</strong></p>
-        <p>At Book My Adda, we aim to redefine travel by making it seamless, secure, and organized. Our platform is designed to simplify trip planning by offering insights, best hotel deals, and intelligent recommendations. Whether you're booking a luxurious getaway or a last-minute adventure, we provide the tools to make your journey smooth, affordable, and memorable.</p>
+        <p><strong>Welcome to Book My Adda – &quot;Your Travel, Your Adda&quot;</strong></p>
+        <p>At Book My Adda, we aim to redefine travel by making it seamless, secure, and organized. Our platform is designed to simplify trip planning by offering insights, best hotel deals, and intelligent recommendations. Whether you&apos;re booking a luxurious getaway or a last-minute adventure, we provide the tools to make your journey smooth, affordable, and memorable.</p>
 
         <p><strong>Our Mission</strong></p>
         <p>To revolutionize travel booking by offering a seamless, transparent, and personalized experience for business and individual travelers.</p>
 
         <p><strong>Our Vision</strong></p>
-        <p>To become India's most trusted and preferred travel‑booking platform, delivering convenience, innovation, and unmatched value.</p>
+        <p>To become India&apos;s most trusted and preferred travel‑booking platform, delivering convenience, innovation, and unmatched value.</p>
 
         <p><strong>Who We Serve?</strong></p>
         <p><strong>B2B –</strong> Corporate clients, event planners, and travel agencies looking for bulk bookings.</p>
         <p><strong>B2C –</strong> Individual travelers seeking the best hotel deals and smart recommendations.</p>
 
-        <p>At Book My Adda, we're your family travel partner. Whether it's a business trip or a vacation, we make sure you get the best deals.</p>
+        <p>At Book My Adda, we&apos;re your family travel partner. Whether it&apos;s a business trip or a vacation, we make sure you get the best deals.</p>
 
         <p><strong>Start your journey with us today!</strong></p>
       </section>

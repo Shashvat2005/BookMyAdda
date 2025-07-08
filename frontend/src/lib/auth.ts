@@ -8,6 +8,7 @@ import {
   GoogleAuthProvider,
   signInWithPopup,
   updateProfile,
+  User,
 } from "firebase/auth";
 import { doc, getDoc, setDoc } from "firebase/firestore";
 
@@ -57,6 +58,6 @@ export const logout = async () => {
   return await signOut(auth);
 };
 
-export const observeAuthState = (callback: (user: any) => void) => {
+export const observeAuthState = (callback: (user: User | null) => void) => {
   return onAuthStateChanged(auth, callback);
 };

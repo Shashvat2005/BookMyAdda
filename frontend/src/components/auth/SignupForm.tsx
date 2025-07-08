@@ -6,6 +6,7 @@ import { z } from 'zod';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { signupWithEmail } from '@/lib/auth';
+import { FirebaseError } from 'firebase/app';
 
 const signupSchema = z.object({
   firstName: z.string().min(1, "First name required"),
@@ -41,8 +42,10 @@ export default function SignupForm() {
           await signupWithEmail(data.email, data.password, displayName);
           router.push("/login");
           
-        } catch (error: any) {
-          alert(error.message);
+        } catch (error) {
+          if (error instanceof FirebaseError) {
+            alert(error.message);
+          }
         } finally {
         setLoading(false);
         }
