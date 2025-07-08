@@ -1,13 +1,13 @@
-body {
-    min-height: 100vh;
-    min-width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background:
-        linear-gradient(rgba(71,29,206,0.65), rgba(0,198,255,0.55)),
-        url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
-    background-size: cover;
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(71,29,206,0.65), rgba(0,198,255,0.55)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-box {
@@ -47,6 +47,7 @@ body {
   border-radius: 8px;
   box-sizing: border-box;
   font-size: 1rem;
+  background: #f8faff;
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 

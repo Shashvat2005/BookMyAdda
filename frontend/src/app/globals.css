@@ -10,9 +10,10 @@
   --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --light: #0a0a0a;
+    --light: #000000;
     --text: #ededed;
   }
 }

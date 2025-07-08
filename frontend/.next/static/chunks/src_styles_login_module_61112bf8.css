@@ -1,18 +1,12 @@
 /* [project]/src/styles/login.module.css [app-client] (css) */
-body {
-  background-color: #0000;
-  background-image: linear-gradient(#471dcea6, #00c6ff8c), url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80");
-  background-position: 0 0, center;
-  background-repeat: repeat, no-repeat;
-  background-size: cover;
-  background-attachment: scroll, fixed;
-  background-origin: padding-box, padding-box;
-  background-clip: border-box, border-box;
+.login-module__4pxX9G__container {
+  background: linear-gradient(#471dcea6, #00c6ff8c), url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80") center / cover no-repeat;
   justify-content: center;
   align-items: center;
-  min-width: 100vw;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
   display: flex;
+  position: relative;
 }
 
 .login-module__4pxX9G__login-box {
@@ -47,6 +41,7 @@ body {
 
 .login-module__4pxX9G__form-group input {
   box-sizing: border-box;
+  background: #f8faff;
   border: 1.5px solid #ddd;
   border-radius: 8px;
   width: 100%;

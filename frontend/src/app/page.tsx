@@ -1,5 +1,6 @@
 "use client";
 import styles from "@/styles/home.module.css";
+import "@/app/globals.css";
 import Link from "next/link";
 
 export default function HomePage() {

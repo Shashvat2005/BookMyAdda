@@ -5,6 +5,7 @@
 var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.v({
+  "container": "login-module__4pxX9G__container",
   "divider": "login-module__4pxX9G__divider",
   "facebook": "login-module__4pxX9G__facebook",
   "fadeIn": "login-module__4pxX9G__fadeIn",
