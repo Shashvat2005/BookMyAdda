@@ -268,8 +268,12 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --light: #000;
-    --text: #ededed;
+    --primary: #2563eb;
+    --secondary: #0f172a;
+    --accent: #3b82f6;
+    --text: #1e293b;
+    --light: #f8fafc;
+    --transition: all .3s ease;
   }
 }
 

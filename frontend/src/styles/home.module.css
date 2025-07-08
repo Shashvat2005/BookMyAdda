@@ -358,7 +358,7 @@
   background: var(--primary);
 }
 
-
+/* 
 :root {
   --primary: #2563eb;
   --secondary: #0f172a;
@@ -366,7 +366,7 @@
   --text: #1e293b;
   --light: #f8fafc;
   --transition: all 0.3s ease;
-}
+} */
 
 /* Header */
 .header {
