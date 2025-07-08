@@ -58,7 +58,7 @@ export default function LoginPage() {
         </div>
 
         <div className={styles['signup-link']}>
-          Don't have an account?{' '}
+          Don&apos;t have an account?{' '}
           <Link href='/signup' className={styles['signup-link-anchor']}>
             Sign up
           </Link>
