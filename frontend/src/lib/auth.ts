@@ -11,6 +11,8 @@ import {
   User,
 } from "firebase/auth";
 import { doc, getDoc, setDoc } from "firebase/firestore";
+import { NextAuthOptions } from "next-auth";
+import GoogleProvider from "next-auth/providers/google";
 
 export const loginWithEmail = async (email: string, password: string) => {
   return await signInWithEmailAndPassword(auth, email, password);
@@ -60,4 +62,14 @@ export const logout = async () => {
 
 export const observeAuthState = (callback: (user: User | null) => void) => {
   return onAuthStateChanged(auth, callback);
+};
+
+export const authOptions: NextAuthOptions = {
+  providers: [
+    GoogleProvider({
+      clientId: process.env.GOOGLE_ID!,
+      clientSecret: process.env.GOOGLE_SECRET!
+    }),
+  ],
+  secret: process.env.NEXTAUTH_SECRET,
 };
