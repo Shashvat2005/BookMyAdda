@@ -1,41 +1,20 @@
-:root {
-  --primary: #2563eb;
-  --secondary: #0f172a;
-  --accent: #3b82f6;
-  --text: #1e293b;
-  --light: #f8fafc;
-  --transition: all 0.3s ease;
-}
-
-body {
-  font-family: 'Segoe UI', system-ui, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: var(--light);
-  color: var(--text);
-  line-height: 1.6;
-}
-
-/* Header */
 .header {
   background: #e5e7eb;
   color: #111;
   padding: 18px 32px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  align-items: center;
   position: sticky;
   top: 0;
   z-index: 100;
-  animation: fadeInDown 0.5s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .logo {
   font-size: 2.2rem;
   letter-spacing: 4px;
   font-weight: 900;
-  margin: 0;
 }
 
 .nav {
@@ -46,66 +25,51 @@ body {
 .nav button {
   background: #fff;
   color: #111;
-  border: none;
   padding: 12px 22px;
-  cursor: pointer;
-  font-weight:900;
+  font-weight: 600;
   border-radius: 30px;
-  font-size: 1rem;
-  font-weight: 500;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-  transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
 }
 
-.nav button:hover,
-.nav button:focus {
+.nav button:hover {
   background: #f3f4f6;
   transform: translateY(-2px) scale(1.07);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
-/* Hero */
 .hero {
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url('/login page .svg') center/cover no-repeat;
+              url('/background.jpg') center/cover no-repeat;
   height: 80vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
   color: white;
   position: relative;
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.4);
   padding: 2rem;
-  width: 100%;
-  animation: fadeIn 1s ease;
-}
-
-.hero h1 {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  border-radius: 1rem;
+  font-size: x-large;
+  max-width: 600px;
 }
 
 .searchBar {
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
-  max-width: 900px;
-  margin: 3rem auto 0;
+  margin-top: 3rem;
+  width: 100%;
 }
 
 .searchBar input {
-  padding: 1rem 1.5rem;
-  width: 100%;
-  border-radius: 50px;
+  padding: 1rem;
+  width: 60%;
   border: none;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: var(--transition);
+  border-radius: 9999px 0 0 9999px;
 }
 
 .searchBar input:focus {
@@ -128,6 +92,17 @@ body {
   background: var(--accent);
   transform: translateY(-2px);
 }
+
+
+/* Add .navigation, .hotDeals, .trippy, .aboutUs, .footer from your original home.module.css as needed. */
+
+
+.hero h1 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 
 /* Navigation */
 .navigation {

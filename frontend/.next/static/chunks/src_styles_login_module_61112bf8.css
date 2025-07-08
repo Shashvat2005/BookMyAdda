@@ -1,19 +1,18 @@
 /* [project]/src/styles/login.module.css [app-client] (css) */
-body, html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: Poppins, Arial, sans-serif;
-}
-
-.login-module__4pxX9G__container {
-  background: linear-gradient(#471dcea6, #00c6ff8c), url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80") center / cover no-repeat;
+body {
+  background-color: #0000;
+  background-image: linear-gradient(#471dcea6, #00c6ff8c), url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80");
+  background-position: 0 0, center;
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  background-attachment: scroll, fixed;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   display: flex;
-  position: relative;
 }
 
 .login-module__4pxX9G__login-box {

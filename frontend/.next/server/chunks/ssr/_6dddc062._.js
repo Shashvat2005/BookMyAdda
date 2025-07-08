@@ -14,7 +14,6 @@ __turbopack_context__.v({
   "dealsGrid": "home-module__i0QXTG__dealsGrid",
   "discount": "home-module__i0QXTG__discount",
   "fadeIn": "home-module__i0QXTG__fadeIn",
-  "fadeInDown": "home-module__i0QXTG__fadeInDown",
   "fadeInUp": "home-module__i0QXTG__fadeInUp",
   "footer": "home-module__i0QXTG__footer",
   "footerContent": "home-module__i0QXTG__footerContent",
