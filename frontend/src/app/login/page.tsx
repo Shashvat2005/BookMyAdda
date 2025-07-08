@@ -10,7 +10,6 @@ import { auth } from "@/lib/firebase";
 
 export default function LoginPage() {
   const { data: session } = useSession();
-  const [form, setForm] = useState({ email: '', password: '' });
 
   const router = useRouter();
 
