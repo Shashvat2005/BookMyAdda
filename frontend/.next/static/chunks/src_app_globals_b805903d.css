@@ -7,6 +7,7 @@
       --tw-rotate-z: initial;
       --tw-skew-x: initial;
       --tw-skew-y: initial;
+      --tw-border-style: solid;
       --tw-ease: initial;
     }
   }
@@ -16,7 +17,9 @@
   :root, :host {
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --spacing: .25rem;
     --ease-in-out: cubic-bezier(.4, 0, .2, 1);
+    --animate-spin: spin 1s linear infinite;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -241,8 +244,41 @@
     }
   }
 
+  .flex {
+    display: flex;
+  }
+
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
+
+  .h-screen {
+    height: 100vh;
+  }
+
+  .w-8 {
+    width: calc(var(--spacing) * 8);
+  }
+
   .transform {
     transform: var(--tw-rotate-x, ) var(--tw-rotate-y, ) var(--tw-rotate-z, ) var(--tw-skew-x, ) var(--tw-skew-y, );
+  }
+
+  .animate-spin {
+    animation: var(--animate-spin);
+  }
+
+  .items-center {
+    align-items: center;
+  }
+
+  .justify-center {
+    justify-content: center;
+  }
+
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
 
   .antialiased {
@@ -363,9 +399,21 @@ input, button {
   inherits: false
 }
 
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+
 @property --tw-ease {
   syntax: "*";
   inherits: false
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 

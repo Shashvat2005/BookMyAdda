@@ -24,6 +24,7 @@ type SignupFormInputs = z.infer<typeof signupSchema>;
 export default function SignupForm() {
 
     const [showPwd, setShowPwd] = useState(false);
+    const [showCnfPwd, setShowCnfPwd] = useState(false); // NEW STATE
     const router = useRouter();
     const [loading, setLoading] = useState(false);
 
@@ -75,7 +76,6 @@ export default function SignupForm() {
           type={showPwd ? 'text' : 'password'}
           required
         />
-
         <button
           type="button"
           className={styles['toggle-password']}
@@ -83,7 +83,6 @@ export default function SignupForm() {
         >
           <i className={`fas fa-eye${showPwd ? '-slash' : ''}`}></i>
         </button>
-
         {errors.password && <span>{errors.password.message}</span>}
       </div>
 
@@ -91,19 +90,17 @@ export default function SignupForm() {
         <label>Confirm Password</label>
         <input
           {...register("passwordcnf")}
-          type={showPwd ? 'text' : 'password'}
+          type={showCnfPwd ? 'text' : 'password'}
           required
         />
-
         <button
           type="button"
           className={styles['toggle-password']}
-          onClick={() => setShowPwd(prev => !prev)}
+          onClick={() => setShowCnfPwd(prev => !prev)}
         >
-          <i className={`fas fa-eye${showPwd ? '-slash' : ''}`}></i>
+          <i className={`fas fa-eye${showCnfPwd ? '-slash' : ''}`}></i>
         </button>
-
-        {errors.password && <span>{errors.password.message}</span>}
+        {errors.passwordcnf && <span>{errors.passwordcnf.message}</span>}
       </div>
 
       <button type="submit" className={styles['signup-btn']} disabled={loading}>

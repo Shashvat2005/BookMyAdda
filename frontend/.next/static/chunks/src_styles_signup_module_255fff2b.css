@@ -16,7 +16,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   padding: 20px;
   transition: box-shadow .3s;
   display: flex;
@@ -39,7 +39,9 @@
   letter-spacing: 1px;
   text-align: center;
   width: 100%;
-  margin-bottom: 28px;
+  white-space: "nowrap";
+  flex: 1;
+  margin: 0;
   font-size: 2rem;
   font-weight: 700;
 }

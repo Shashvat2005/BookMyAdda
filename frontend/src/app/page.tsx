@@ -1,9 +1,37 @@
 "use client";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { onAuthStateChanged, User } from "firebase/auth";
+import { useRouter } from "next/navigation";
+import { auth } from "@/lib/firebase";
 import styles from "@/styles/home.module.css";
 import "@/app/globals.css";
-import Link from "next/link";
+import { logout } from "@/lib/auth";
 
 export default function HomePage() {
+  const [user, setUser] = useState<User | null>(null);
+  const router = useRouter();
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
+      setUser(firebaseUser);
+      // If user is logged in and on /login or /signup, redirect to home/dashboard
+      if (
+        firebaseUser &&
+        (window.location.pathname === "/login" || window.location.pathname === "/signup")
+      ) {
+        router.replace("/"); // or "/dashboard" if you have a dashboard
+      }
+    });
+    return () => unsubscribe();
+  }, [router]);
+
+  const handleLogout = async () => {
+    await logout();
+    setUser(null);
+    router.replace("/login");
+  };
+
   return (
     <>
       <header className={styles.header}>
@@ -14,7 +42,11 @@ export default function HomePage() {
             About Us
           </button>
           <button>Connect</button>
-          <Link href="/login"><button>Login/Signup</button></Link>
+          {!user ? (
+            <Link href="/login"><button>Login/Signup</button></Link>
+          ) : (
+            <button onClick={handleLogout}>Logout</button>
+          )}
           <button><i className="fas fa-user"></i> Profile</button>
         </nav>
       </header>

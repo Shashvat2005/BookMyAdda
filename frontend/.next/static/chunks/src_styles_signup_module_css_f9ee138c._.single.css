@@ -1,0 +1,193 @@
+/* [project]/src/styles/signup.module.css [app-client] (css) */
+.signup-module__zhaxbq__container {
+  background: linear-gradient(#471dcea6, #00c6ff8c), url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80") center / cover no-repeat;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.signup-module__zhaxbq__signup-box {
+  backdrop-filter: blur(2px);
+  background: #fff6;
+  border-radius: 18px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  transition: box-shadow .3s;
+  display: flex;
+  box-shadow: 0 8px 25px #010101;
+}
+
+.signup-module__zhaxbq__signup-box:hover {
+  box-shadow: 0 12px 40px #471dce2e, 0 2px 12px #00000021;
+}
+
+#signup-module__zhaxbq__signup-form {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.signup-module__zhaxbq__login-title {
+  color: #000;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 28px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.signup-module__zhaxbq__form-group {
+  width: 100%;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.signup-module__zhaxbq__form-group label {
+  color: #333;
+  letter-spacing: .5px;
+  margin-bottom: 6px;
+  font-weight: 500;
+  display: block;
+}
+
+.signup-module__zhaxbq__form-group input {
+  box-sizing: border-box;
+  background: #f8faff;
+  border: 1.5px solid #d1d1d1;
+  border-radius: 6px;
+  outline: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+.signup-module__zhaxbq__form-group input:focus {
+  border-color: #471dce;
+  box-shadow: 0 0 0 2px #471dce1a;
+}
+
+.signup-module__zhaxbq__password-group {
+  position: relative;
+}
+
+.signup-module__zhaxbq__toggle-password {
+  cursor: pointer;
+  color: #888;
+  z-index: 2;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 1.1em;
+  transition: color .2s;
+  position: absolute;
+  top: 38px;
+  right: 12px;
+}
+
+.signup-module__zhaxbq__toggle-password:hover {
+  color: #471dce;
+}
+
+.signup-module__zhaxbq__signup-btn {
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(90deg, #471dce 0%, #00c6ff 100%);
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  margin: 20px 0;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background .2s, box-shadow .2s;
+  display: block;
+  box-shadow: 0 2px 8px #471dce1a;
+}
+
+.signup-module__zhaxbq__signup-btn:hover {
+  background: linear-gradient(90deg, #00c6ff 0%, #471dce 100%);
+  box-shadow: 0 4px 16px #471dce21;
+}
+
+.signup-module__zhaxbq__account-exists {
+  color: #444;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  font-size: .97rem;
+}
+
+.signup-module__zhaxbq__account-exists a {
+  color: #471dce;
+  font-weight: 500;
+  text-decoration: none;
+  transition: text-decoration .2s;
+}
+
+.signup-module__zhaxbq__account-exists a:hover {
+  text-decoration: underline;
+}
+
+@keyframes signup-module__zhaxbq__slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.signup-module__zhaxbq__login-title {
+  animation: .6s ease-out signup-module__zhaxbq__slideIn;
+}
+
+@keyframes signup-module__zhaxbq__fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.signup-module__zhaxbq__signup-box {
+  animation: .6s ease-out signup-module__zhaxbq__fadeInUp;
+}
+
+.signup-module__zhaxbq__form-group input:focus {
+  border-color: #471dce;
+  transition: box-shadow .3s;
+  box-shadow: 0 0 8px #471dce4d;
+}
+
+@media (width <= 500px) {
+  .signup-module__zhaxbq__signup-box {
+    max-width: 90vw;
+    padding: 30px 20px;
+  }
+
+  .signup-module__zhaxbq__login-title {
+    font-size: 1.6rem;
+  }
+
+  .signup-module__zhaxbq__form-group input {
+    padding: 10px;
+  }
+}
+
+/*# sourceMappingURL=src_styles_signup_module_css_f9ee138c._.single.css.map*/

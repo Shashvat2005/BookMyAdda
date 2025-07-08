@@ -13,7 +13,7 @@
 
 .signup-box {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px; 
     padding: 20px;
     background: rgba(255,255,255,0.4);
     border-radius: 18px;
@@ -46,6 +46,9 @@
     letter-spacing: 1px;
     text-align: center;
     width: 100%;
+    white-space: "nowrap";
+    margin: 0;
+    flex: 1;
 }
 
 .form-group {

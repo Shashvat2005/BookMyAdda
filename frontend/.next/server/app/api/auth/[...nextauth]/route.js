@@ -1,11 +1,15 @@
 const CHUNK_PUBLIC_PATH = "server/app/api/auth/[...nextauth]/route.js";
 const runtime = require("../../../../chunks/[turbopack]_runtime.js");
 runtime.loadChunk("server/chunks/node_modules_next_98bdb807._.js");
-runtime.loadChunk("server/chunks/node_modules_next-auth_b9ce9ae5._.js");
+runtime.loadChunk("server/chunks/d9ef2_@firebase_auth_dist_node-esm_7327eb28._.js");
+runtime.loadChunk("server/chunks/node_modules_@grpc_grpc-js_7f00da83._.js");
+runtime.loadChunk("server/chunks/node_modules_protobufjs_998281b9._.js");
+runtime.loadChunk("server/chunks/node_modules_@firebase_firestore_dist_index_node_mjs_d57471a3._.js");
+runtime.loadChunk("server/chunks/node_modules_next-auth_9562a870._.js");
 runtime.loadChunk("server/chunks/node_modules_openid-client_ef38b3be._.js");
 runtime.loadChunk("server/chunks/node_modules_c6205b71._.js");
-runtime.loadChunk("server/chunks/node_modules_88fe39b1._.js");
-runtime.loadChunk("server/chunks/[root-of-the-server]__95f20205._.js");
+runtime.loadChunk("server/chunks/node_modules_642d86d8._.js");
+runtime.loadChunk("server/chunks/[root-of-the-server]__f2cfd5c4._.js");
 runtime.getOrInstantiateRuntimeModule("[project]/.next-internal/server/app/api/auth/[...nextauth]/route/actions.js [app-rsc] (server actions loader, ecmascript)", CHUNK_PUBLIC_PATH);
 runtime.getOrInstantiateRuntimeModule("[project]/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/src/app/api/auth/[...nextauth]/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)", CHUNK_PUBLIC_PATH);
 module.exports = runtime.getOrInstantiateRuntimeModule("[project]/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/src/app/api/auth/[...nextauth]/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)", CHUNK_PUBLIC_PATH).exports;
